@@ -9,19 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     let apiService = WeatherAPIService()
     
+    @IBOutlet weak var textView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+    }
+    
+    @IBAction func fetchWeather(_ sender: Any) {
         let url = URL(string:"http://api.wunderground.com/api/39c6d95e30243c4b/forecast/q/MI/Detroit.json")
         
         apiService.executeWebRequest(urlToExecute: url!) { (responseDict, error) in
-            print(responseDict)
+            DispatchQueue.main.async {
+                
+                if let unwrappedError = error {
+                    print(unwrappedError.localizedDescription)
+                }
+                self.textView.text = responseDict?.description
+            }
         }
     }
-
-
 }
 
