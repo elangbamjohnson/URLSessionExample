@@ -12,6 +12,7 @@
 		2383AFCA22284435007D87D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2383AFC822284435007D87D8 /* Main.storyboard */; };
 		2383AFCC22284436007D87D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2383AFCB22284436007D87D8 /* Assets.xcassets */; };
 		2383AFCF22284436007D87D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2383AFCD22284436007D87D8 /* LaunchScreen.storyboard */; };
+		2383AFD722284515007D87D8 /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383AFD622284515007D87D8 /* WeatherAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2383AFCB22284436007D87D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2383AFCE22284436007D87D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2383AFD022284436007D87D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2383AFD622284515007D87D8 /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2383AFC422284435007D87D8 /* AppDelegate.swift */,
 				2383AFC622284435007D87D8 /* ViewController.swift */,
+				2383AFD622284515007D87D8 /* WeatherAPIService.swift */,
 				2383AFC822284435007D87D8 /* Main.storyboard */,
 				2383AFCB22284436007D87D8 /* Assets.xcassets */,
 				2383AFCD22284436007D87D8 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2383AFD722284515007D87D8 /* WeatherAPIService.swift in Sources */,
 				2383AFC722284435007D87D8 /* ViewController.swift in Sources */,
 				2383AFC522284435007D87D8 /* AppDelegate.swift in Sources */,
 			);

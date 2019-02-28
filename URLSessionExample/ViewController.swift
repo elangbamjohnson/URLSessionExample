@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    let apiService = WeatherAPIService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let url = URL(string:"http://api.wunderground.com/api/39c6d95e30243c4b/forecast/q/MI/Detroit.json")
+        
+        apiService.executeWebRequest(urlToExecute: url!) { (responseDict, error) in
+            print(responseDict)
+        }
     }
 
 
