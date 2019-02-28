@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fetchWeather(_ sender: Any) {
-        let url = URL(string:"http://api.wunderground.com/api/39c6d95e30243c4b/forecast/q/MI/Detroit.json")
+//        let url = URL(string:"http://api.wunderground.com/api/39c6d95e30243c4b/forecast/q/MI/Detroit.json")
+        
+        let url = URL(string:"http://somecrazybitch.orecast/q/MI/D")
         
         apiService.executeWebRequest(urlToExecute: url!) { (responseDict, error) in
             DispatchQueue.main.async {
